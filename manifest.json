@@ -1,0 +1,19 @@
+{
+	"icons": [
+		{
+			"src": "./images/favicon.svg",
+			"sizes": "48x48 72x72 96x96 128x128 256x256 384x384 512x512",
+			"type": "image/svg+xml",
+			"purpose": "any"
+		}
+	],
+	"name": "Sehrentos - Portfolio",
+	"short_name": "Sehrentos",
+	"orientation": "portrait",
+	"display": "standalone",
+	"start_url": "./index.html",
+	"fallback": "./offline.html",
+	"description": "Niko Hyrkäs (Sehrentos) - Portfolio",
+	"theme_color": "#111111",
+	"background_color": "#111111"
+}

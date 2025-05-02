@@ -1,0 +1,125 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+.parallax-background-1,
+.parallax-background-2,
+.parallax-background-3,
+.parallax-background-4,
+.parallax-background-5 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Photo by [Philip Oroni](https://unsplash.com/@philipsfuture) on [Unsplash](https://unsplash.com/) */
+.parallax-background-1 {
+    background-image: url("https://plus.unsplash.com/premium_photo-1720287601920-ee8c503af775?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    min-height: 100%;
+}
+
+/* Photo by [AltumCode](https://unsplash.com/@altumcode) on [Unsplash](https://unsplash.com/) */
+.parallax-background-2 {
+    background-image: url("https://images.unsplash.com/photo-1628258334105-2a0b3d6efee1?q=80&w=3615&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    min-height: 40%;
+}
+
+/* Photo by [Getty Images](https://unsplash.com/@gettyimages) on [Unsplash](https://unsplash.com/) */
+.parallax-background-3 {
+    background-image: url("https://plus.unsplash.com/premium_photo-1661963874418-df1110ee39c1?q=80&w=3486&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    min-height: 60%;
+}
+
+.parallax-background-4 {
+    background-image: url("images/nodejs-game-server-demo.jpg");
+    min-height: 100%;
+}
+
+.parallax-background-5 {
+    background-image: url("images/kotlin-android-barcode-reader.jpg");
+    min-height: 100%;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption .border {
+    background-color: #000000;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+.caption .border a {
+    color: #fff;
+}
+
+.article {
+    padding: 50px 80px;
+    text-align: justify;
+}
+
+.article h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.article.right {
+    text-align: right;
+}
+
+.article.center {
+    text-align: center;
+}
+
+.article.light {
+    color: #424242;
+    background-color: white;
+}
+
+.article.light h3 {
+    color: #111;
+}
+
+.article.light a {
+    color: #111;
+}
+
+.article.dark {
+    color: #ddd;
+    background-color: #282e34;
+}
+
+.article.dark h3 {
+    color: #ffffff;
+}
+
+.article.dark a {
+    color: #fff;
+}
+
+/* optional: turn off parallax scrolling for tablets and phones */
+/*@media only screen and (max-device-width: 1024px) {
+  .parallax-background-1,
+  .parallax-background-2,
+  .parallax-background-3 {
+    background-attachment: scroll;
+  }
+}*/
