@@ -65,6 +65,7 @@ html {
     padding: 18px;
     font-size: 25px;
     letter-spacing: 10px;
+    line-height: 2;
 }
 
 .caption .border a {
@@ -72,8 +73,8 @@ html {
 }
 
 .article {
-    padding: 50px 80px;
-    text-align: justify;
+    padding: 2em 3em;
+    text-align: left;
     word-break: break-word;
 }
 
