@@ -326,6 +326,12 @@ a {
         background-attachment: scroll;
     }*/
 
+    /* smaller image on mobile */
+    .caption figure.avatar img {
+        width: 11em;
+        height: 11em;
+    }
+
     /* increase height */
     .parallax.background-2 {
         min-height: 70%;
