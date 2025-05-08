@@ -344,7 +344,7 @@ a {
 
     /* full width on mobile */
     .menu nav {
-        max-width: 100vh;
+        max-width: 100vw;
     }
 
     /* full width on mobile */
