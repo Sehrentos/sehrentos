@@ -1,0 +1,5 @@
+# 1 Rule them all
+User-agent: *
+Allow: /
+
+Sitemap: https://sehrentos.github.io/sehrentos/sitemap.xml

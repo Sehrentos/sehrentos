@@ -7,7 +7,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<meta name="HandheldFriendly" content="true" />
 	<meta name="theme-color" content="#111111" />
-	<title>Niko Hyrkäs (Sehrentos) - Portfolio</title>
+	<title>Niko Hyrkäs - Application Developer Website & Portfolio</title>
+	<meta property="og:title" content="Niko Hyrkäs - Application Developer Website & Portfolio">
+	<meta property="og:type" content="website">
+	<meta name="description" content="Sehrentos, Niko Hyrkäs, Application Developer, Website, Portfolio">
+	<meta property="og:description" content="Sehrentos, Niko Hyrkäs, Application Developer, Website, Portfolio">
+	<meta property="og:url" content="https://sehrentos.github.io/sehrentos/">
+	<meta name="robots" content="index,follow">
 	<link rel="icon" href="images/favicon.svg" sizes="any">
 	<link rel="manifest" href="manifest.json" />
 	<link rel="stylesheet" href="index.css" />
@@ -15,42 +21,50 @@
 </head>
 
 <body>
-	<div class="parallax-background-1">
-		<div class="caption">
-			<span class="border">Niko Hyrkäs (Sehrentos) - Portfolio</span>
+	<div id="home" class="parallax background-1">
+		<div class="caption" style="top: 30%;">
+			<figure class="avatar">
+				<img src="images/avatar.jpg" alt="Avatar image" />
+				<figcaption class="ribbon">Niko <br> Hyrkäs</figcaption>
+			</figure>
 		</div>
 	</div>
 
-	<div class="article light left">
-		<h3>About</h3>
+	<div id="about" class="article light left">
+		<h3><a href="#about">About</a></h3>
 		<p>
-			I am Niko Hyrkäs, an application developer from Finland.
+			👋 Hey, I am Niko Hyrkäs, an application developer from Finland.
 		</p>
 		<p>
-			Currently, I'm an employee in a small but very flexible company,
-			and since I'm also a father, flexibility is great for work and life balancing.
-		</p>
-		<p>
-			I am also a gamer (when I have free time), and the name Sehrentos comes from there.
+			Currently, I'm an employee in a small but very flexible company.
 		</p>
 		<p>
 			Most of my work is done as private or confidential projects,
 			but I have also worked on some public projects,
 			which you can find below in this page.
 		</p>
+		<p>
+			<i>💫 I like action, science fiction, and fantasy movies and games.
+				The name Sehrentos comes from online gaming, and somehow it stuck with me over the years.
+			</i>
+		</p>
 	</div>
 
-	<div class="parallax-background-2">
+	<div class="parallax background-2">
 		<div class="caption">
-			<span class="border" style="background-color: transparent; font-size: 25px; color: #f7f7f7">
+			<!--<span class="background ribbon">
 				SKILLS
-			</span>
+			</span>-->
 		</div>
 	</div>
 
-	<div class="article dark right">
+	<div id="skills" class="article dark right">
+		<h3><a href="#skills">Skills</a></h3>
 		<p>
-			HTML, CSS, JavaScript, Python, Java, Kotlin, SQL.
+			I have experience with the following programming languages and frameworks:
+		</p>
+		<p>
+			HTML, CSS, JavaScript, Java, Kotlin, Python, PHP, SQL.
 		</p>
 		<p>
 			Azure DevOps, GitHub, GitHub Actions.
@@ -60,30 +74,24 @@
 		</p>
 	</div>
 
-	<div class="parallax-background-3">
+	<div id="projects" class="parallax background-3">
 		<div class="caption">
-			<span class="border" style="background-color: transparent; font-size: 25px; color: #f7f7f7">
-				PROJECTS
+			<span class="background ribbon">
+				<a href="#projects">PROJECTS</a>
 			</span>
 		</div>
 	</div>
 
-	<div class="parallax-background-4">
-		<div class="caption">
-			<div class="border">
-				NODEJS GAME SERVER & CLIENT
-			</div>
-		</div>
-	</div>
-
-	<div class="article dark left">
+	<div id="project-1-nodejs-mmo" class="article dark left">
+		<h3><a href="#project-1-nodejs-mmo">NODEJS GAME SERVER</a></h3>
 		<p>
-			Source: <a
-				href="https://github.com/Sehrentos/nodejs-game-server">https://github.com/Sehrentos/nodejs-game-server</a>
+			Source: <a href="https://github.com/Sehrentos/nodejs-game-server" target="_blank">
+				https://github.com/Sehrentos/nodejs-game-server
+			</a>
 		</p>
 		<p>
-			This is a MMO-like game server written in NodeJS. It uses MariaDB as a database and uses WebSockets for
-			communication
+			This is a MMO-like game server written in NodeJS.
+			It uses MariaDB as a database and WebSockets for communication
 			between clients and server.
 		</p>
 		<p>
@@ -94,20 +102,22 @@
 		</p>
 	</div>
 
-	<div class="parallax-background-5">
+	<div class="parallax background-4">
 		<div class="caption">
-			<div class="border">
-				BARCODE SCANNER FOR ANDROID
+			<div class="background transparent">
+				<!-- NODEJS GAME SERVER -->
 			</div>
 		</div>
 	</div>
 
-	<div class="article dark left">
+	<div id="project-2-barcode-reader" class="article dark right">
+		<h3><a href="#project-2-barcode-reader">BARCODE READER</a></h3>
 		<p>
-			Source: <a href="https://github.com/Sehrentos/BarcodeReader">https://github.com/Sehrentos/BarcodeReader</a>
+			Source: <a href="https://github.com/Sehrentos/BarcodeReader"
+				target="_blank">https://github.com/Sehrentos/BarcodeReader</a>
 		</p>
 		<p>
-			This project was made to scan barcodes from Android devices. It uses the Goolgle ML Kit library for barcode
+			This project was made to scan barcodes from Android devices. It uses the Google ML Kit library for barcode
 			scanning and stores the results in a SQLite database.
 		</p>
 		<p>
@@ -115,35 +125,102 @@
 		</p>
 	</div>
 
-	<div class="parallax-background-3" style="min-height: 30%;">
+	<div class="parallax background-5">
 		<div class="caption">
-			<span class="border" style="background-color: transparent; font-size: 25px; color: #f7f7f7">
-				LINKS
-			</span>
+			<div class="background transparent">
+				<!-- BARCODE READER -->
+			</div>
 		</div>
 	</div>
 
-	<div class="article dark left">
+	<div id="links" class="article dark left">
+		<h3><a href="#links">LINKS</a></h3>
 		Here are links to all of my public projects and code snippets.
 		<ol>
 			<li>
-				<a href="https://github.com/Sehrentos?tab=repositories">Github repositories</a>
+				<a href="https://github.com/Sehrentos?tab=repositories" target="_blank">Github repositories</a>
 			</li>
 			<li>
-				<a href="https://pastebin.com/u/Sehrentos">Pastebin code snippets</a>
+				<a href="https://pastebin.com/u/Sehrentos" target="_blank">Pastebin code snippets</a>
 			</li>
 			<li>
-				<a href="https://jsfiddle.net/u/Sehrentos/fiddles/">JS Fiddle code snippets</a>
+				<a href="https://jsfiddle.net/u/Sehrentos/fiddles/" target="_blank">JS Fiddle code snippets</a>
 			</li>
 		</ol>
 	</div>
 
-	<!-- repeat the first parallax background -->
-	<div class="parallax-background-1">
+	<div class="parallax background-3" style="height: 30%;">
 		<div class="caption">
-			<span id="contact-email" class="border">Contact email: loading...</span>
+			<span class="background transparent">
+				<!-- Next: Education -->
+			</span>
 		</div>
 	</div>
+
+	<div id="education" class="article dark right">
+		<h3><a href="#education">EDUCATION</a></h3>
+		<p>
+			I have Vocational Qualification in Electrical Engineering / Electronics and Telecommunications Engineering
+			from Riihimäki Vocational school in Finland.
+		</p>
+	</div>
+
+	<div class="parallax background-7 scroll">
+		<div class="caption">
+			<span class="background ribbon">
+				Our cats 🐱
+			</span>
+		</div>
+	</div>
+
+	<div id="work" class="article dark left">
+		<h3><a href="#work">WORK</a></h3>
+		<ol>
+			<li>
+				<a href="https://crd.fi/" target="_blank">CRD SYSTEMS OY</a> -
+				<span>Electrical Engineering, desktop & printer installations and website development for 3
+					years.</span>
+			</li>
+			<li>
+				<a href="https://ids.fi/" target="_blank">ID-Systems IDS Oy</a> -
+				<span>Mobile device installation and maintenance, Mobile application and website development for 10
+					years.</span>
+			</li>
+		</ol>
+	</div>
+
+	<div class="parallax background-8 scroll">
+		<div class="caption">
+			<span class="background ribbon">
+				Our dogs 🐶
+			</span>
+		</div>
+	</div>
+
+	<div id="contact" class="article dark center">
+		<h3><a href="#contact">CONTACT</a></h3>
+		<address id="contact-email">loading...</address>
+		<address>&copy; 2025 Niko Hyrkäs</address>
+	</div>
+
+	<div class="menu">
+		<a href="javascript:void(0);" class="toggle" aria-label="open or close menu">
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+		<nav role="navigation" class="navigation">
+			<a href="#home">Home</a>
+			<a href="#about">About</a>
+			<a href="#skills">Skills</a>
+			<a href="#projects">Projects</a>
+			<a href="#links">Links</a>
+			<a href="#education">Education</a>
+			<a href="#work">Work</a>
+			<a href="#contact">Contact</a>
+		</nav>
+	</div>
+
 </body>
 
 </html>

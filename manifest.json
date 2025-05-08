@@ -7,13 +7,13 @@
 			"purpose": "any"
 		}
 	],
-	"name": "Sehrentos - Portfolio",
+	"name": "Sehrentos | Niko Hyrkäs",
 	"short_name": "Sehrentos",
 	"orientation": "any",
 	"display": "standalone",
 	"start_url": "./index.html",
 	"fallback": "./offline.html",
-	"description": "Niko Hyrkäs (Sehrentos) - Portfolio",
+	"description": "Sehrentos | Niko Hyrkäs - Application Developer Portfolio",
 	"theme_color": "#111111",
 	"background_color": "#111111"
 }

@@ -1,8 +1,8 @@
 ## Hi there 👋
 
 I am Niko Hyrkäs, an application developer from Finland.
-Currently, I'm an employee in a small but very flexible company,
-and since I'm also a father, flexibility is great for work and life balancing.
+
+Currently, I'm an employee in a small but very flexible company.
 
 I am also a gamer (when I have free time), and the name Sehrentos comes from there.
 

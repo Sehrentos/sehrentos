@@ -1,49 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+
 body,
 html {
     height: 100%;
     margin: 0;
-    font: 400 15px/1.8 "Lato", sans-serif;
+    font: 400 1.2em/1.8 "Roboto Condensed", "Lato", sans-serif;
     color: #777;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
 }
 
-.parallax-background-1,
-.parallax-background-2,
-.parallax-background-3,
-.parallax-background-4,
-.parallax-background-5 {
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: #777;
+}
+
+.parallax {
     position: relative;
-    opacity: 0.65;
+    opacity: 1;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.parallax-background-1 {
-    background-image: url("images/table-and-desktop.jpg");
+.parallax.background-1 {
+    background-image: url("images/swing.jpg");
     min-height: 100%;
 }
 
-.parallax-background-2 {
+.parallax.background-2 {
     background-image: url("images/some-flowers.jpg");
-    min-height: 40%;
+    min-height: 50%;
 }
 
-.parallax-background-3 {
+.parallax.background-3 {
     background-image: url("images/table-and-desktop.jpg");
-    min-height: 60%;
+    min-height: 50%;
 }
 
-.parallax-background-4 {
+.parallax.background-4 {
     background-image: url("images/nodejs-game-server-demo.jpg");
     min-height: 100%;
 }
 
-.parallax-background-5 {
+.parallax.background-5 {
     background-image: url("images/kotlin-android-barcode-reader.jpg");
     min-height: 100%;
+    background-position-x: left;
+}
+
+.parallax.background-6 {
+    background-image: url("images/table-and-desktop.jpg");
+    min-height: 60%;
+}
+
+.parallax.background-7 {
+    background-image: url("images/animal-1.jpg");
+    min-height: 100%;
+    background-position-y: 0%;
+}
+
+.parallax.background-8 {
+    background-image: url("images/animal-2.jpg");
+    min-height: 100%;
+    background-position-x: 35%;
+    background-position-y: 10%;
 }
 
 .caption {
@@ -56,29 +81,85 @@ html {
     word-break: break-word;
 }
 
-.caption .border {
+.caption figure.avatar {
+    margin: 0 auto;
+}
+
+.caption figure.avatar img {
+    border: 1em solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    width: 16em;
+    height: 16em;
+    object-fit: cover;
+}
+
+.caption figure.avatar figcaption {
+    position: relative;
+    top: -0.8em;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.5em;
+    font-size: 1.1em;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    background-color: #ffffff;
+}
+
+.caption figure.avatar figcaption.ribbon {
+    top: -2.8em;
+    padding: 0 1em;
+    background-color: transparent;
+}
+
+.caption .ribbon {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    line-height: 3;
+    background-color: transparent;
+}
+
+.caption .background.ribbon {
+    padding: 0 1em;
+    line-height: 3;
+    background-color: transparent;
+}
+
+.caption .background {
     background-color: #000000;
-    color: #fff;
-    padding: 18px;
-    font-size: 25px;
-    letter-spacing: 10px;
+    color: #f7f7f7;
+    padding: 1em;
+    font-size: 1.5em;
+    letter-spacing: 0.2em;
     line-height: 2;
 }
 
-.caption .border a {
-    color: #fff;
+.caption .background a {
+    color: #f7f7f7;
+    text-decoration: none;
+}
+
+.caption .background.transparent {
+    background-color: transparent;
+    text-shadow: 1px 1px 5px #ffffff, 0 0 1em #000000, 0 0 0.2em #8c8c8f;
 }
 
 .article {
-    padding: 2em 3em;
+    padding: 0.5em 1em;
     text-align: left;
     word-break: break-word;
 }
 
 .article h3 {
-    letter-spacing: 5px;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 1.1em;
+}
+
+.article h3 a {
+    text-decoration: none;
 }
 
 .article.right {
@@ -94,12 +175,8 @@ html {
     background-color: white;
 }
 
-.article.light h3 {
-    color: #111;
-}
-
 .article.light a {
-    color: #111;
+    color: #424242;
 }
 
 .article.dark {
@@ -107,19 +184,174 @@ html {
     background-color: #282e34;
 }
 
-.article.dark h3 {
-    color: #ffffff;
-}
-
 .article.dark a {
-    color: #fff;
+    color: #ddd;
 }
 
-/* optional: turn off parallax scrolling for tablets and phones */
-/*@media only screen and (max-device-width: 1024px) {
-  .parallax-background-1,
-  .parallax-background-2,
-  .parallax-background-3 {
-    background-attachment: scroll;
-  }
-}*/
+/**
+ * Menu/navigation
+ */
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.menu .toggle {
+    display: inline-block;
+    position: absolute;
+    top: 0.25em;
+    right: 0.25em;
+    padding: 0;
+    margin: 0;
+}
+
+.menu .toggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #fff;
+    box-shadow: 0px 0px 10px #000;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
+}
+
+.menu .toggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+.menu .toggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+.menu .toggle.open span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-5px, -16px);
+    transform-origin: 2px 0px;
+    background: #232323;
+    box-shadow: 0px 0px 10px #ffffff;
+}
+
+.menu .toggle.open span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.menu .toggle.open span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(-8px, 16px);
+    transform-origin: -2px 0px;
+}
+
+.menu nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100vw;
+    max-width: 20em;
+    max-height: 100vh;
+    padding: 2.5em 1em;
+    text-align: center;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    background-color: #fff;
+    border-top: #777 solid 1px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    overflow-y: auto;
+    opacity: 0;
+    transition: left 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.menu nav.open {
+    left: calc(100% - 20em);
+    opacity: 1;
+}
+
+.menu nav a {
+    color: #232323;
+    text-decoration: none;
+    padding: 0.5em;
+}
+
+.menu nav a:hover {
+    text-decoration: underline;
+}
+
+/* Ribbon source: https://codepen.io/t_afif/pen/ZEwOZVB */
+.ribbon {
+    --r: .5em;
+    /* control the cutout of the ribbon */
+    --c: #b70606;
+
+    padding-inline: calc(.5em + var(--r));
+    text-align: center;
+    line-height: 3;
+    color: #fff;
+    background-image:
+        linear-gradient(var(--c) 70%, #0000 0),
+        linear-gradient(to bottom left, #0000 50%, color-mix(in srgb, var(--c), #000 40%) 51% 84%, #0000 85%);
+    background-position: 0 .15lh;
+    background-size: 100% 1lh;
+    clip-path: polygon(0 .15lh, 100% .15lh, calc(100% - var(--r)) .5lh, 100% .85lh, 100% calc(100% - .15lh), 0 calc(100% - .15lh), var(--r) calc(100% - .5lh), 0 calc(100% - .85lh));
+    /* width: fit-content; you may need this in your real use case */
+    outline: none;
+}
+
+/* if you update the line-height, you need to also update the below */
+@supports not (height:1lh) {
+    .ribbon {
+        background-position: 0 .3em;
+        background-size: 100% 2em;
+        clip-path: polygon(0 .3em, 100% .3em, calc(100% - var(--r)) 1em, 100% 1.7em, 100% calc(100% - .3em), 0 calc(100% - .3em), var(--r) calc(100% - 1em), 0 calc(100% - 1.7em))
+    }
+}
+
+/**
+ * for tablets and phones
+ */
+@media only screen and (max-device-width: 1024px) {
+
+    /* optional: turn off parallax scrolling */
+    /*.parallax {
+        background-attachment: scroll;
+    }*/
+
+    /* increase height */
+    .parallax.background-2 {
+        min-height: 70%;
+    }
+
+    /* increase height */
+    .parallax.background-3 {
+        min-height: 70%;
+    }
+
+    /* full width on mobile */
+    .menu nav {
+        max-width: 100vh;
+    }
+
+    /* full width on mobile */
+    .menu nav.open {
+        left: 0%;
+    }
+}
+
+/**
+ * for large screens
+ */
+@media (min-width: 1024px) {
+    .article {
+        padding: 2em 3em;
+    }
+}
